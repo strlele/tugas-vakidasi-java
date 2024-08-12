@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Peminjaman Buku</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="form">
+        <section class="loan-form-section">
+            <div class="container-form">
+                
+                <h1 class="title-form">Form Peminjaman Buku</h1>
+
+                <form id="loanForm" class="group-form" onsubmit="return validateLoanForm()">
+                    <div class="form-group">
+                        <label for="nameform">Nama:</label>
+                        <input type="text" id="nameform" name="name" placeholder="Masukkan Nama..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="number">No. Hp:</label>
+                        <input type="text" id="number" name="number" placeholder="Masukkan Nomor Hp..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="class">Kelas:</label>
+                        <select id="class" name="class" required>
+                            <option value="">Pilih Kelas</option>
+                            <option value="X">X</option>
+                            <option value="XI">XI</option>
+                            <option value="XII">XII</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="major">Kejuruhan:</label>
+                        <select id="major" name="major" required>
+                            <option value="">Pilih Kejuruan</option>
+                            <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                            <option value="Teknik Komputer dan Jaringan">Teknik Komputer dan Jaringan</option>
+                            <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+                            <option value="Multimedia">Multimedia</option>
+                            <option value="Teknik Elektronika Industri">Teknik Elektronika Industri</option>
+                            <option value="Teknik Mesin">Teknik Mesin</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookTitle">Judul Buku:</label>
+                        <input type="text" id="bookTitle" name="bookTitle" placeholder="Masukkan Judul Buku" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="classificationNumber">No. Klasifikasi:</label>
+                        <input type="text" id="classificationNumber" name="classificationNumber" placeholder="Masukkan Nomor Klasifikasi..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Tanggal Peminjaman:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="tombol">
+                        <button type="submit" class="btn-submit">Pinjam Buku</button>
+                        
+                        <div class="btn-back">
+                            <a href="index.html" class="kembali">Kembali</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
